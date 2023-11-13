@@ -2,28 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    // loader: rootLoader,
-    // children: [
-    //   {
-    //     path: "team",
-    //     element: <Team />,
-    //     loader: teamLoader,
-    //   },
-    // ],
-  },
-]);
+import "@fortawesome/fontawesome-free/css/all.min.css"
+import "./assets/styles/tailwind.css"
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+    <App />
   </React.StrictMode>,
 )
